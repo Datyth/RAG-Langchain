@@ -92,4 +92,3 @@ The entire pipeline is demonstrated in the `notebooks/rag-pineline.ipynb` notebo
     * Asking a question and seeing the retrieved context.
     * Getting the final answer from the LLM.
 
-## 📂 Project Structure
