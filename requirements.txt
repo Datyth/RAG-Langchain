@@ -1,6 +1,8 @@
 langchain
 langchain-core
 langchain-community
+langchain_groq
+langchain-google-genai
 pypdf
 pymupdf
 tqdm
