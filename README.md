@@ -59,8 +59,8 @@ The process can be broken down into four main stages, as implemented in the `rag
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
-    cd simple-rag-langchain
+    git clone https://github.com/Datyth/Simple-RAG-Langchain.git
+    cd Simple-RAG-Langchain
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -91,4 +91,5 @@ The entire pipeline is demonstrated in the `notebooks/rag-pineline.ipynb` notebo
     * Embedding the chunks and storing them in ChromaDB.
     * Asking a question and seeing the retrieved context.
     * Getting the final answer from the LLM.
+
 
