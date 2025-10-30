@@ -1,11 +1,17 @@
 langchain
 langchain-core
 langchain-community
+langchain-chroma
 langchain_groq
 langchain-google-genai
+langserve[all]
 pypdf
 pymupdf
 tqdm
 sentence_transformers
 chromadb
+faiss-cpu
 wget
+fastapi
+uvicorn
+langchain_huggingface

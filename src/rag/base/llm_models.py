@@ -35,30 +35,6 @@ class GeminiLLM:
             print(f"Error loading Gemini model {self.model_name}: {e}")
             raise e
             
-    def generate_response(self, question: str, context: str) -> str:
-        prompt_template = """You are an AI assistant helping users find information. Use the following context to answer the question accurately and concisely.
-Context:
-{context}
-
-Question: {question}
-
-Answer: Provide a clear and informative answer based on the context above. If the context doesn't contain enough information to answer the question, say so."""
-        try: 
-            prompt = PromptTemplate(
-                input_variables=['context', 'question'],
-                template=prompt_template
-            )
-
-            formatted_prompt = prompt.format(context=context, question=question)
-            messages = [
-                HumanMessage(content=formatted_prompt)
-            ]
-            response = self.model.invoke(messages)
-            return response.content
-        except Exception as e:
-            print(f"Error generating response: {e}")
-            raise e
-        
 if __name__ == "__main__":
     # gemini_llm = GeminiLLM(api_key = gemini_api_key)
     print("ok")
