@@ -17,8 +17,8 @@ This repository is structured as a production-ready application. It separates co
 * **Modern LCEL Chain**: The RAG logic is built using the LangChain Expression Language (LCEL), not legacy classes, for a clear and composable pipeline.
 * **Extensible LLM Support**: Easily swap LLMs by adding a new class to `src/rag/base/llm_models.py`. **Google Gemini** is implemented by default.
 
-![API docs interface][assert/image_01.jpg]
-![Question and Response][assert/response-example.jpg]
+![API docs interface](assert/image_01.jpg)
+![Question and Response](assert/response-example.jpg)
 
 ## ⚙️ How It Works: The API Pipeline
 
@@ -153,6 +153,7 @@ RAG-Langchain/
 ├── README.md              # (This file)
 └── requirements.txt       #
 ```
+
 
 
 
