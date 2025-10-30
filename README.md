@@ -1,10 +1,9 @@
 # Production-Ready RAG Pipeline with LangChain and FastAPI
 
-This project implements a complete, modular, and deployment-ready Retrieval-Augmented Generation (RAG) pipeline using Python, LangChain, FastAPI, and LangServe. The system is designed to move beyond notebook-based prototyping into a scalable web service that ingests PDF documents, processes them into a persistent vector store, and serves a question-answering API powered by Google's Gemini LLM.
-
+This project implements a basic complete, deployment-ready Retrieval-Augmented Generation (RAG) pipeline using Python, LangChain, FastAPI, LangServe and API LLMs.
 ## 📜 Overview
 
-The core idea of this RAG pipeline is to enhance the knowledge of an LLM with custom, private data. Instead of relying solely on its pre-trained knowledge, the model can "look up" relevant information from a provided set of documents before answering a question.
+The core idea of this RAG pipeline is to enhance the knowledge of an LLM with custom, private data. Instead of relying solely on its pretrained knowledge, the model can look up relevant information from a provided set of documents before answering a question.
 
 This repository is structured as a production-ready application. It separates concerns into logical modules for data loading, vector storage, LLM interfacing, and the core RAG logic, all wrapped in a high-performance FastAPI server with LangServe.
 
@@ -144,3 +143,4 @@ RAG-Langchain/
 ├── .gitignore
 ├── README.md              # (This file)
 └── requirements.txt
+
