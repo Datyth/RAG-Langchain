@@ -119,13 +119,14 @@ The process is broken down into a series of modular components orchestrated by `
 ### 📂Folder Structure
 Here's the project layout to help you find your way around:
 
+```
 RAG-Langchain/
 │
 ├── src/
 │   ├── app.py             # Main FastAPI server (entry point)
 │   ├── data_source/
-│   │   ├── gen_ai/        # <-- Place your PDFs here
-│   │   └── vector_db/     # Persistent vector store is saved here
+│   │   ├── gen_ai/        # <-- Place your PDFs here (and download.py script)
+│   │   └── vector_db/     # (Git-ignored) Persistent vector store is saved here
 │   └── rag/
 │       ├── base/
 │       │   └── llm_models.py  # LLM abstraction (Gemini)
@@ -137,10 +138,17 @@ RAG-Langchain/
 │           └── vectorstore.py # Manages (saves/loads) ChromaDB or FAISS
 │
 ├── notebooks/
-│   └── rag-pineline.ipynb   # The original notebook for prototyping
+│   ├── document.ipynb     # Notebook for exploring Langchain Documents
+│   └── rag-pineline.ipynb # The original notebook for prototyping
+│
+├── data/                  # (Legacy data from notebook prototyping)
+│   ├── pdf/               #
+│   └── text/              #
 │
 ├── .env                   # (You need to create this) For API keys
-├── .gitignore
+├── .gitignore             #
 ├── README.md              # (This file)
-└── requirements.txt
+└── requirements.txt       #
+```
+
 
