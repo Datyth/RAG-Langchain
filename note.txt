@@ -1,3 +1,0 @@
-uv init
-uv add -r requirements.txt
-uv add ipykernel
